@@ -1,0 +1,53 @@
+  <head>
+    <title>Anveshak</title>
+    <link rel="shortcut icon" href="assets/favicon.ico">
+  </head>
+  
+	<script>
+		function changevid(id) {
+		  document.getElementById("vid").src = id;
+		  var container = document.getElementById("outer");
+		  var content = container.innerHTML;
+		  container.innerHTML= content; 
+		}
+	</script>
+
+  <body>
+	  <div class="vertical-menu">
+	    <a href="#" onclick="changevid('controlsys/module1/1.mp4')">Session 1</a>
+	  </div>
+
+
+	  <video id = 'outer' controls>
+	  	<source id='vid' src="controlsys/module1/abc.mp4" type="video/mp4">
+	  </video>
+  </body>
+  
+  <style>
+  	.vertical-menu {
+	  width: 20%;
+	}
+	.vertical-menu a {
+	  background-color: #eee;
+	  font-family: sans-serif;
+	  color: black;
+	  display: block;
+	  padding: 12px;
+	  font-weight:bold;
+	}
+	.vertical-menu a:hover {
+	  background-color: #ccc;
+	}
+	.vertical-menu a.active {
+	  background-color: #4CAF50;
+	  color: white;
+	}
+  	
+  	#outer{
+  	  float:right;
+  	  width: 60%;
+  	  margin-right:10%;
+  	}
+  </style>
+  
+
