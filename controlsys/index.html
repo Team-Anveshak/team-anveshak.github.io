@@ -1,5 +1,5 @@
   <head>
-    <title>Control Systems</title>
+    <title>Anveshak</title>
     <link rel="shortcut icon" href="../assets/favicon.ico">
   </head>
   
@@ -13,21 +13,25 @@
 	</script>
 
   <body>
-	  <div class="vertical-menu">
+	  <div class="module1">
+			<h1>Module 1</h1>
 	    <a href="#" onclick="changevid('module1/1.mp4')">Session 1</a>
 	  </div>
 
-
 	  <video id = 'outer' controls>
-	  	<source id='vid' src="./gen.webm" type="video/mp4">
+	  	<source id='vid' preload="metadata" src="gen.webm" type="video/mp4">
 	  </video>
   </body>
   
   <style>
-  	.vertical-menu {
+  .module1 {
 	  width: 20%;
+		padding: 3%;
+		font-family: sans-serif;
+	  color: black;
+		background-color: rgb(211, 123, 52);
 	}
-	.vertical-menu a {
+	.module1 a {
 	  background-color: #eee;
 	  font-family: sans-serif;
 	  color: black;
@@ -35,19 +39,23 @@
 	  padding: 12px;
 	  font-weight:bold;
 	}
-	.vertical-menu a:hover {
+	.module1 a:hover {
 	  background-color: #ccc;
 	}
-	.vertical-menu a.active {
-	  background-color: #4CAF50;
+	.module1 a.active {
+	  background-color: rgb(199, 72, 14);
 	  color: white;
 	}
   	
-  	#outer{
-  	  float:right;
-  	  width: 60%;
-  	  margin-right:10%;
-  	}
+	#outer{
+		float:right;
+		width: 60%;
+		margin-right:5%;
+	}
   </style>
   
 
+
+
+
+	
