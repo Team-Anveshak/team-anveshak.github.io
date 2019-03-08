@@ -13,22 +13,28 @@
 
   <body>
 	  <div class="module1">
-			<h1>Module 1</h1>
-	    <a href="#" onclick="changevid('https://upload.wikimedia.org/wikipedia/commons/f/f5/Mod1-1.webm')">Session 1</a>
+	  	<h1>Module 1</h1>
+	    <a href="#" onclick="changevid('https://drive.google.com/file/d/1lTyGrErqofR1Ow3sV9FCIx4VUHb8Ea3s/preview')">Session 1</a>
+	    <a href="#" onclick="changevid('https://drive.google.com/file/d/1wfqevfE8Jp88W9WIQnhob7q-1hjZDaOo/preview')">Session 2</a>
+	    <a href="#" onclick="changevid('#')">Session 3</a>
+	    <a href="#" onclick="changevid('#')">Session 4</a>
 	  </div>
 
-	  <video id = 'outer' controls>
-	  	<source id='vid' preload="metadata" src="gen.webm" type="video/mp4">
-	  </video>
+	  <iframe id='vid' src='gen.webm'></iframe>
   </body>
   
-  <style>
+<style>
+  body {
+  	padding-top:3%
+	}
+	
   .module1 {
-	  width: 20%;
-		padding: 3%;
-		font-family: sans-serif;
-	  color: black;
-		background-color: rgb(211, 123, 52);
+	width: 20%;
+	padding: 3%;
+	font-family: sans-serif;
+	float:left;
+	color: black;
+	background-color: rgb(211, 123, 52);
 	}
 	.module1 a {
 	  background-color: #eee;
@@ -37,7 +43,7 @@
 	  display: block;
 	  padding: 12px;
 	  font-weight:bold;
-	}
+	 }
 	.module1 a:hover {
 	  background-color: #ccc;
 	}
@@ -46,12 +52,13 @@
 	  color: white;
 	}
   	
-	#outer{
-		float:right;
-		width: 60%;
-		margin-right:5%;
-	}
-  </style>
+ #vid{
+	float:right;
+	width: 60%;
+	height: 70%;
+	margin-right:5%;
+ }
+</style>
   
 
 
