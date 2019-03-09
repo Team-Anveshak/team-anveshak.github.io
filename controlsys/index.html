@@ -12,15 +12,22 @@
 	</script>
 
   <body>
-	  <div class="module1">
+	  <div class="module">
 	  	<h1>Module 1</h1>
 	    <a href="#" onclick="changevid('https://drive.google.com/file/d/1lTyGrErqofR1Ow3sV9FCIx4VUHb8Ea3s/preview')">Session 1</a>
 	    <a href="#" onclick="changevid('https://drive.google.com/file/d/1wfqevfE8Jp88W9WIQnhob7q-1hjZDaOo/preview')">Session 2</a>
-	    <a href="#" onclick="changevid('#')">Session 3</a>
-	    <a href="#" onclick="changevid('#')">Session 4</a>
+	    <a href="#" onclick="changevid('../assets/anv.png')">Session 3</a>
+	    <a href="#" onclick="changevid('../assets/anv.png')">Session 4</a>
+	  </div>
+	  
+	  
+	  <iframe id='vid' src='../assets/anv.png'></iframe>
+
+	  <div class="module">
+	  	<h1>Module 2</h1>
+	    <a href="#" onclick="changevid('../assets/anv.png')">Session 1</a>
 	  </div>
 
-	  <iframe id='vid' src='gen.webm'></iframe>
   </body>
   
 <style>
@@ -28,15 +35,17 @@
   	padding-top:3%
 	}
 	
-  .module1 {
+  .module {
 	width: 20%;
 	padding: 3%;
 	font-family: sans-serif;
+	margin-bottom: 3%;
 	float:left;
 	color: black;
 	background-color: rgb(211, 123, 52);
+	height: auto;
 	}
-	.module1 a {
+	.module a {
 	  background-color: #eee;
 	  font-family: sans-serif;
 	  color: black;
@@ -44,18 +53,18 @@
 	  padding: 12px;
 	  font-weight:bold;
 	 }
-	.module1 a:hover {
+	.module a:hover {
 	  background-color: #ccc;
 	}
-	.module1 a.active {
+	.module a.active {
 	  background-color: rgb(199, 72, 14);
 	  color: white;
 	}
   	
  #vid{
 	float:right;
-	width: 60%;
-	height: 70%;
+	width: 60vw;
+	height: 40vw;
 	margin-right:5%;
  }
 </style>
