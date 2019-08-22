@@ -44,6 +44,14 @@ div{
     animation: shake 1s; 
     animation-iteration-count: infinite;
 }
+#g4{
+    position: absolute;
+    z-index:100;
+    width: 90vw;
+    top: 1%;
+    left: 2%;
+}
+
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   5% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -59,15 +67,13 @@ div{
   51% { transform: translate(1px, 1px) rotate(0deg); }
 }
 
-#cover:visited {
-  background-color: yellow;
-}
+
 #cover{
     position: absolute;
     z-index:100;
     width:100%;
     height:100%;
-    background-color:purple;
+    background-color:#99bda8;
     transition: opacity 2s;
 }
 
