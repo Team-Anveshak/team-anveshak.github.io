@@ -2,10 +2,25 @@
 	<title>B'Day Wishes</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://19aurora.github.io/birthday/index.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900">
 </head>
 
+<script>
+function myF(){
+ document.getElementById('cover').style.opacity = "0.0";
+ document.getElementById('ll').play();
+}
+</script>
+
+<audio autoplay id="ll" style="display:none">
+  <source src="./Freefall.mp3" type="audio/mpeg">
+</audio>
+
+
+<div id="cover" onclick="myF()">
+<img id='g3' src='box.png'></img>
+</div>
 
 <canvas id="birthday"></canvas>
 <img id='g1' src='g1.png'></img>
@@ -16,6 +31,5 @@
     <p>May this year bring you the courage to soar higher, the confidence to take unprecedented action, the humility to accept your mistakes and the tolerance to understand others!</p> 
     <p>Team Anveshak wishes you a very Happy Birthday!</p>
 </div>
-
 
 <script src='https://team-anveshak.github.io/birthday/index.js'></script>
