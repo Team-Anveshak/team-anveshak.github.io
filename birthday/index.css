@@ -40,6 +40,7 @@ div{
     position: absolute;
     z-index:100;
     left: 25%;
+    top: 25%;
     animation: shake 1s; 
     animation-iteration-count: infinite;
 }
